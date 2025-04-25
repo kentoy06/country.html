@@ -12,7 +12,7 @@ html, body{
 }
 
 body{
-    background-color: white;
+    background-color: black;
     height: 100vh;
     background-position: top;
     background-size: cover;
@@ -29,7 +29,7 @@ body{
 }
 
 .navbar ul{
-    margin-left: 500px;
+    margin-left: 400px;
     list-style-type: none;
     display: flex;
 }
@@ -42,10 +42,15 @@ body{
 .navbar ul li a{
     color: black;
     text-decoration: none;
+    text-decoration: none;
+    transition: 0.3s linear;
+    font-weight: bold;
 }
+
 
 .navbar ul li a:hover{
     color:red;
+    border-bottom: 2px solid red;
 }
 
 .logo img{
@@ -81,23 +86,36 @@ body{
 
 .tiger img{
     display: inline-block;
-    margin-left: 33%;
+    margin-left: 34%;
 }
 
 .second-content{
-    height: 100vh;
     color:white;
+    height: 100vh;
 }
 
 .second-content h1{
     color:black;
 }
 
-.third-content h1{
-    color: white;
+.third-content{
+    align-items: center;
     height: 100vh;
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(img/b2.jpg);
 }
+
+.third-content h1{
+    color: white;
+}
+
+.video{
+    margin-top: 5%;
+    margin-left: 25%;
+    position: absolute;
+    align-items: center;
+
+}
+
