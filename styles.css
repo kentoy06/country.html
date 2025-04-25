@@ -13,12 +13,7 @@ html, body{
 
 body{
     background-color: black;
-    height: 100vh;
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(img/homes.avif);
-}
+} 
 
 .navbar{
     display: flex;
@@ -29,7 +24,7 @@ body{
 }
 
 .navbar ul{
-    margin-left: 400px;
+    margin-left: 600px;
     list-style-type: none;
     display: flex;
 }
@@ -60,42 +55,72 @@ body{
 }
 
 .content{
-    font-size:xx-large;
-    width: 1200px;
-    height: auto;
-    margin: auto;
-    color:rgb(245, 176, 65);
-    position: relative;
-    overflow: hidden;
+    color:rgb(245, 176, 65);  
+    height: 100vh;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(img/homes.avif);
 }
-
+   
 .content h1{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100px;
     padding-left: 20px;
-    margin-left: 30%;
-    margin-top: 10%;
+    text-align: center;
     letter-spacing: 2%;
 }
 
 .content h5{
     font-family:'Times New Roman', Times, serif;
     font-size: 30px;
-    margin-left: 35%;
+    text-align: center;
 }
 
 .tiger img{
     display: inline-block;
-    margin-left: 34%;
+    margin-left: 33.5%;
 }
 
 .second-content{
     color:white;
     height: 100vh;
+    align-self: center;
+    text-align: center;
 }
 
 .second-content h1{
-    color:black;
+    color:white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:xx-large;
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color:rgb(231, 76, 60 );
+    position: relative;
+    overflow: hidden;
+    font-size: 5vw;
+}
+
+.second-content p{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.capital img{
+    width: 25%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255);
+    transition: all ease-in-out 0.5s;
+}
+
+.capital img:hover{
+    width: 30%;
+
 }
 
 .third-content{
@@ -108,14 +133,140 @@ body{
 }
 
 .third-content h1{
-    color: white;
+    font-size: 3vw;
+    margin-top: 3%;
+    color: rgb(34, 234, 168);
+    align-self: center;
+    text-align: center;
 }
 
 .video{
     margin-top: 5%;
-    margin-left: 25%;
+    margin-left: 23%;
     position: absolute;
     align-items: center;
-
 }
 
+footer{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 0px;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.content2{
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 4vh;
+    background-image: url(img/bg.jpg);
+    height: 100vh;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+
+.image{
+    width: 450px;
+    position: relative;
+}
+
+.image img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.descrip{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.descrip:hover{
+    opacity: 1;
+}
+
+.descrip > *{
+    transform: translateY(25px);
+    transition: transform 0.6s;
+}
+
+.descrip:hover > *{
+    transform: translateY(0px);
+}
+
+/* .content2 .pic1{
+    width:400px;
+    aspect-ratio: 1/ 0.7;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+}
+
+.content2 .pic1 .image-box{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.content2 .pic1 .image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 90%;
+    border-radius: inherit;
+    transition: 0.4 ease-in-out;
+}
+
+.content2 .pic1::after{
+    content:"";
+    position: absolute;
+    inset: 0;
+    border: 2px solid white;
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.content2 .pic1:hover img{
+    filter: grayscale(1) brightness(0.4);
+}
+
+.content2 .pic1:hover::after{
+    opacity: 1;
+    inset: 20px;
+}
+
+.descrip{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+} */
