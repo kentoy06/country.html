@@ -64,15 +64,16 @@ body{
 }
    
 .content h1{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     font-size: 100px;
     padding-left: 20px;
     text-align: center;
     letter-spacing: 2%;
+    text-shadow: 5px 4px black;
 }
 
 .content h5{
-    font-family:'Times New Roman', Times, serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     text-align: center;
 }
@@ -96,10 +97,11 @@ body{
     width: 1200px;
     height: auto;
     margin: auto;
-    color:rgb(231, 76, 60 );
+    color:rgb(60, 231, 174);
     position: relative;
     overflow: hidden;
     font-size: 5vw;
+    text-shadow: 3px 3px 4px white;
 }
 
 .second-content p{
@@ -135,9 +137,11 @@ body{
 .third-content h1{
     font-size: 3vw;
     margin-top: 3%;
-    color: rgb(34, 234, 168);
+    color:rgb(218, 177, 125);
     align-self: center;
     text-align: center;
+    text-shadow: 7px 8px 10px rgb(6, 6, 6);
+    font-family:'Times New Roman', Times, serif;
 }
 
 .video{
@@ -165,12 +169,18 @@ footer{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     text-align: center;
-    font-size: 4vh;
+    font-size: 3vh;
     background-image: url(img/bg.jpg);
     height: 100vh;
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.content2 h1{
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    text-shadow: 1px 1px rgb(47, 131, 233);
 }
 
 .wrapper{
@@ -182,7 +192,7 @@ footer{
 }
 
 .image{
-    width: 450px;
+    width: 700px;
     position: relative;
 }
 
@@ -190,6 +200,8 @@ footer{
     width: 100%;
     display: block;
     margin: auto;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255);
 }
 
 .descrip{
@@ -207,6 +219,10 @@ footer{
     transition: 0.6s;
 }
 
+.descrip p{
+    font-style: italic;
+}
+
 .descrip:hover{
     opacity: 1;
 }
@@ -220,6 +236,160 @@ footer{
     transform: translateY(0px);
 }
 
+.content3{
+    color: white;
+    text-align: center;
+    font-size: 3vh;
+    background-image: url(img/bg3.jpg);
+    height: 100vh;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapper2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper2 .image{
+    margin-top:10%;
+}
+
+.content4{
+    color: white;
+    text-align: center;
+    font-size: 3vh;
+    background-image: url(img/bg2.jpg);
+    height: 100vh;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapper3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper3 .image{
+    margin-top:10%;
+}
+
+.map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    color: white;
+    margin-top: 4%;
+}
+
+.box{
+    max-width: 600px;
+}
+.box h1{
+    font-size: 5em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:orange;
+    text-shadow: 6px 8px 9px rgb(244, 78, 7);
+}
+.box p{
+    font-size: 1.2em;
+    font-family:'Times New Roman', Times, serif;
+    color: whitesmoke;
+    text-shadow:1px 2px 3px pink;
+}
+.maps{
+    border-radius: 2em;
+    border: none;
+    width: 500px;
+    height: 500px;
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
+
+.maps:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.head h1{
+    color:rgb(164, 88, 131);
+    align-items: center;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: 1px 1px white;
+    font-size: 3.5em;
+}
+
+.culture{
+    width: 90%;
+    padding:20px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.culture h1{
+    color: white;
+}
+
+.cult{
+    width: 250px;
+    margin: 0 10px;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,.1);
+    transition: 1s;
+}
+
+.cult img{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255);
+}
+
+.cult:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+.food{
+    margin-right: 3%;
+}
+.art{
+    margin-right: 6%;
+}
+
+.place{
+    margin-right: 5%;
+}
+
+.food h1{
+    color: rgb(250, 3, 3);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.art h1{
+    color: rgb(127, 165, 69);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.festival h1{
+    color: rgb(165, 77, 69);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.place h1{
+    color: rgb(69, 85, 165);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 /* .content2 .pic1{
     width:400px;
     aspect-ratio: 1/ 0.7;
